@@ -30,8 +30,8 @@ public class FetchPostfromPage {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	    	searchString = br.readLine();
 			
-	    	System.setProperty("https.proxyHost", "172.18.65.22");
-		    System.setProperty("https.proxyPort", "80"); 
+	    	System.setProperty("https.proxyHost", "*************");
+		    System.setProperty("https.proxyPort", "******"); 
 		    System.setProperty("proxySet", "true");
 			
 		    FacebookClient.AccessToken accessToken = new DefaultFacebookClient().obtainAppAccessToken(FBUtil.myAppId, FBUtil.myAppSecretKey);
